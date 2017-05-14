@@ -253,6 +253,17 @@ var letterGrade = function (score, total){
  * @return {object} restaurant
  */
 
+var incrementReviews = function (obj){
+  var restaurant = {};
+  if (restaurant.reviews === true){
+    return restaurant.reviews++;
+  } else {
+    return restaurant.reviews === 0;
+  }
+
+};
+
+
 
 /**
  * Joins two strings with a space.
@@ -260,6 +271,11 @@ var letterGrade = function (score, total){
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+
+var combine = function (word1, word2){
+  return word1 + " " + word2;
+};
 
 
 /**
