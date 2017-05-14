@@ -179,7 +179,9 @@ var minimum = function (x, y){
  * @param {number} y
  * @return {number} the largest number
  */
-
+var maximum = function (x, y){
+  return Math.max(x,y);
+};
 
 /**
  * Returns true if `n` is even.
