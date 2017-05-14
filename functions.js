@@ -4,8 +4,8 @@
  * @return {string} the number as a string
  */
 
- var numberToString = function(n){
-  return n.toString();
+ var numberToString = function(num){
+  return num.toString();
  };
 
 
@@ -15,8 +15,8 @@
  * @return {number}
  */
 
- var increase = function(n){
-  return n+1;
+ var increase = function(num){
+  return num + 1;
  };
 
 
@@ -26,8 +26,8 @@
  * @return {number}
  */
 
-var decrease = function(n){
-  return n-1;
+var decrease = function(num){
+  return num - 1;
 };
 
 /**
@@ -38,7 +38,7 @@ var decrease = function(n){
  */
 
 var add = function (x, y){
-  return x+y;
+  return x + y;
 };
 
 
@@ -50,7 +50,7 @@ var add = function (x, y){
  */
 
 var subtract = function (x, y){
-  return x-y;
+  return x - y;
 };
 
 /**
@@ -61,7 +61,7 @@ var subtract = function (x, y){
  */
 
 var multiply = function (x, y){
-  return x*y;
+  return x * y;
 };
 
 /**
@@ -72,7 +72,7 @@ var multiply = function (x, y){
  */
 
 var divide = function (x, y){
-  return x/y;
+  return x / y;
 };
 
 /**
@@ -82,7 +82,8 @@ var divide = function (x, y){
  */
 
 var square = function (x){
-  return x*x;
+  return x * x;
+  // or return Math.pow (x, 2);
 };
 
 /**
@@ -94,25 +95,24 @@ var square = function (x){
  * @return {number} the result
  */
 
-var calculate = function (op, x, y){
-  if (op === "add"){
-    console.log(x + " + " + y + " = " + (x+y));
-    return (x+y);
+var calculate = function (operator, x, y){
+  if (operator === "add"){
+    console.log(x + " + " + y + " = " + (x + y));
+    return (x + y);
+    // or use previous functions created in previous problems
+    // return add(x,y);
+    // or use switch statements
   }
 
-  if (op === "subtract"){
-    console.log(x + " - " + y + " = " + (x-y));
-    return (x-y);
-  }
-
-  if (op === "multiply"){
-    console.log(x + " * " + y + " = " + (x*y));
-    return (x*y);
-  }
-
-  if (op === "divide"){
-    console.log(x + " / " + y + " = " + (x/y));
-    return (x/y);
+  if (operator === "subtract"){
+    console.log(x + " - " + y + " = " + (x - y));
+    return (x - y);
+  } else if (operator === "multiply"){
+    console.log(x + " * " + y + " = " + (x * y));
+    return (x * y);
+  } else if (operator === "divide"){
+    console.log(x + " / " + y + " = " + (x / y));
+    return (x / y);
   }
 
 };
@@ -125,6 +125,7 @@ var calculate = function (op, x, y){
  */
 
 var isGreaterThan = function (a, b){
+  // or return a > b;
   if (a > b){
     return true;
   } else {
@@ -140,6 +141,7 @@ var isGreaterThan = function (a, b){
  */
 
 var isLessThan = function (a, b){
+  // or return a < b;
   if (a < b){
     return true;
   } else {
@@ -155,6 +157,7 @@ var isLessThan = function (a, b){
  */
 
 var areEqual = function (a, b){
+  // or return a === b;
   if (a === b){
     return true;
   } else {
@@ -205,12 +208,13 @@ var isEven = function (n){
  */
 
 var isOdd = function (n){
-  if (n%2 !== 0){
+  if (n % 2 !== 0){
     return true;
   } else {
     return false;
   }
 };
+// or return !isEven(n);
 
 /**
  * Returns a letter grade.
@@ -230,17 +234,17 @@ var letterGrade = function (score, total){
 
   if (myGrade >= 0.9){
     return "A";
-  }
-  if (myGrade >= 0.8){
+  } else if (myGrade >= 0.8){
     return "B";
-  }
-  if (myGrade >= 0.7){
+  } else if (myGrade >= 0.7){
     return "C";
-  }
-  if (myGrade >= 0.6){
+  } else if (myGrade >= 0.6){
     return "D";
-  }
-  if (myGrade < 0.6){
+/*  else {
+    return "F";
+  }*/
+
+  } else if (myGrade < 0.6){
     return "F";
   }
 };
@@ -262,6 +266,7 @@ var incrementReviews = function (restaurant){
   return restaurant;
 };
 
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
@@ -271,6 +276,8 @@ var incrementReviews = function (restaurant){
 
 
 var combine = function (word1, word2){
+  // return word1.concat(" ", word2);
+  // return [word1, word2].join(" ")
   return word1 + " " + word2;
 };
 
