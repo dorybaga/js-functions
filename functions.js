@@ -4,9 +4,9 @@
  * @return {string} the number as a string
  */
 
- function numberToString (n){
+ var numberToString = function(n){
   return n.toString();
- }
+ };
 
 
 /**
@@ -15,9 +15,9 @@
  * @return {number}
  */
 
- function increase (n){
+ var increase = function(n){
   return n+1;
- }
+ };
 
 
 /**
@@ -26,9 +26,9 @@
  * @return {number}
  */
 
-function decrease (n){
+var decrease = function(n){
   return n-1;
-}
+};
 
 /**
  * Adds two numbers.
@@ -37,9 +37,9 @@ function decrease (n){
  * @return {number} the sum
  */
 
-function add (x, y){
+var add = function (x, y){
   return x+y;
-}
+};
 
 
 /**
@@ -49,9 +49,9 @@ function add (x, y){
  * @return {number} the difference
  */
 
-function subtract (x, y){
+var subtract = function (x, y){
   return x-y;
-}
+};
 
 /**
  * Multiplies two numbers.
@@ -59,6 +59,7 @@ function subtract (x, y){
  * @param {number} y
  * @return {number} the product
  */
+
 
 
 /**
