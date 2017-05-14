@@ -96,22 +96,22 @@ var square = function (x){
 
 var calculate = function (op, x, y){
   if (op === "add"){
-    console.log(x + "+" + y + "=" + (x+y));
+    console.log(x + " + " + y + " = " + (x+y));
     return (x+y);
   }
 
   if (op === "subtract"){
-    console.log(x + "-" + y + "=" + (x-y));
+    console.log(x + " - " + y + " = " + (x-y));
     return (x-y);
   }
 
   if (op === "multiply"){
-    console.log(x + "*" + y + "=" + (x*y));
+    console.log(x + " * " + y + " = " + (x*y));
     return (x*y);
   }
 
   if (op === "divide"){
-    console.log(x + "/" + y + "=" + (x/y));
+    console.log(x + " / " + y + " = " + (x/y));
     return (x/y);
   }
 
