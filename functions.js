@@ -60,7 +60,9 @@ var subtract = function (x, y){
  * @return {number} the product
  */
 
-
+var multiply = function (x, y){
+  return x*y;
+};
 
 /**
  * Divides the first number by the second.
