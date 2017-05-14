@@ -253,14 +253,13 @@ var letterGrade = function (score, total){
  * @return {object} restaurant
  */
 
-var incrementReviews = function (obj){
-  var restaurant = {};
-  if (restaurant.reviews === true){
-    return restaurant.reviews++;
+var incrementReviews = function (restaurant){
+  if (restaurant.hasOwnProperty("reviews")){
+    restaurant.reviews++;
   } else {
-    return restaurant.reviews === 0;
+    restaurant.reviews = 1;
   }
-
+  return restaurant;
 };
 
 /**
