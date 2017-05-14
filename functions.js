@@ -263,8 +263,6 @@ var incrementReviews = function (obj){
 
 };
 
-
-
 /**
  * Joins two strings with a space.
  * @param {string} word1
@@ -277,7 +275,6 @@ var combine = function (word1, word2){
   return word1 + " " + word2;
 };
 
-
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
@@ -285,4 +282,15 @@ var combine = function (word1, word2){
  * @param {number} radius
  * @return {object} circle
  */
+
+var createCircle = function (radius){
+  var circle = {};
+  circle.circumference = Math.PI*(radius*2);
+  circle.area = Math.PI*(radius*radius);
+  return circle;
+};
+
+
+
+
 
