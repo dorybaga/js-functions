@@ -94,6 +94,28 @@ var square = function (x){
  * @return {number} the result
  */
 
+var calculate = function (op, x, y){
+  if (op === "add"){
+    console.log(x + "+" + y + "=" + (x+y));
+    return (x+y);
+  }
+
+  if (op === "subtract"){
+    console.log(x + "-" + y + "=" + (x-y));
+    return (x-y);
+  }
+
+  if (op === "multiply"){
+    console.log(x + "*" + y + "=" + (x*y));
+    return (x*y);
+  }
+
+  if (op === "divide"){
+    console.log(x + "/" + y + "=" + (x/y));
+    return (x/y);
+  }
+
+};
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -102,6 +124,13 @@ var square = function (x){
  * @return {boolean} `a` is larger than `b`
  */
 
+var isGreaterThan = function (a, b){
+  if (a > b){
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /**
  * Returns true if `a` is less than `b`.
